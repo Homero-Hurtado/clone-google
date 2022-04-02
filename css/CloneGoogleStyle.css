@@ -1,0 +1,64 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+header nav{
+    width: 250px;
+    display: flex;
+    justify-content: space-around;
+    float: right;
+    margin-top: 10px;
+    align-items: center;
+}
+nav div img{
+    width: 30px;
+    height: 30px;
+}
+section center img{
+    width: 300px;
+    margin-left: 200px;
+    margin-top: 60px;
+    margin-bottom: 10px;
+}
+section center input{
+    width: 550px;
+    height: 30px;
+    margin-top: 0px;
+    margin-bottom: 30px;
+}
+section center button{
+    width: 150px;
+    height: 35px;
+    margin-bottom: 30px;
+}
+p{
+    width: 100%;
+    margin-bottom: 150px;
+}
+ul li{
+    display: inline-block;
+}
+ul.izq{
+    display: flex;
+    float: left;
+    width: 500px;
+    justify-content: space-around;
+    margin-left: 0px;
+}
+ul.der{
+    display: flex;
+    float: right;
+    width: 250px;
+    justify-content: space-around;
+    margin-left: 0px;
+}
+ul.mx{
+    display: flex;
+    margin-left: 15px;
+}
