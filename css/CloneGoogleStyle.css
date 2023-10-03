@@ -1,37 +1,66 @@
-body{
-    margin: 0px;
-    padding: 0px;
-    font-size: 14px;
-    font-family: Arial, Helvetica, sans-serif;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    height: 60px;
+    padding: 6px;
+}
+
+.services{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 200px;
+    margin: 5px;
+}
+
 a{
     text-decoration: none;
+    color: #000000;
     cursor: pointer;
 }
-header nav{
-    width: 250px;
-    display: flex;
-    justify-content: space-around;
-    float: right;
-    margin-top: 10px;
-    align-items: center;
+
+a :visited{
+    text-decoration: none;
+    color: #000000;
 }
-nav div img{
+
+a img{
     width: 30px;
     height: 30px;
 }
-section center img{
-    width: 300px;
-    margin-left: 200px;
-    margin-top: 60px;
-    margin-bottom: 10px;
+
+.profile{
+    border-radius: 50%;
 }
-section center input{
-    width: 550px;
-    height: 30px;
-    margin-top: 0px;
-    margin-bottom: 30px;
+
+body{
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
 }
+.google-search{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.google-search img{
+    width: 272px ;
+    height: 92px;
+}
+
+.google-search input{
+    width: 561px;
+    height: 44px;
+}
+
 section center button{
     width: 150px;
     height: 35px;
