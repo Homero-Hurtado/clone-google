@@ -1,24 +1,56 @@
+/* root */
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background: transparent;
 }
+
+body{
+    height: 100vh;
+    min-width: 400px;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;    
+}
+
+.all-content{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+/* header */
 
 header{
     display: flex;
-    align-items: center;
     justify-content: flex-end;
+    align-items: center;
     width: 100%;
     height: 60px;
     padding: 6px;
+    flex-shrink: 0;
+}
+
+.header-content{
+    display: block;
+    min-width: auto;
+    height: 48px;
+    color: #000000;
 }
 
 .services{
     display: flex;
-    align-items: center;
+    float: right;
+    box-sizing: border-box;
+    height: 48px;
+    line-height: normal;
+    padding: 0 4px;
     justify-content: space-between;
+    vertical-align: middle;
+    white-space: nowrap;
+    align-items: center;
     width: 200px;
-    margin: 5px;
 }
 
 a{
@@ -41,53 +73,199 @@ a img{
     border-radius: 50%;
 }
 
-body{
-    font-size: 14px;
-    font-family: Arial, Helvetica, sans-serif;
-}
-.google-search{
+/* logo */
+
+.logo-space{
     display: flex;
     flex-direction: column;
     align-items: center;
+    min-height: 92px;
+    max-height: 290px;
+    flex-shrink: 0;
+    box-sizing: border-box;
+    height: calc(100vh - 560px);
 }
 
-.google-search img{
-    width: 272px ;
+.google-logo{
+    display: block;
+    max-height: 92px;
+    position: relative;
+    height: 100%;
+    margin-top: auto;
+}
+
+.google-logo img{
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+    object-position: center bottom;
+    width:auto;
     height: 92px;
 }
 
-.google-search input{
-    width: 561px;
-    height: 44px;
+/* input */
+
+.box-search{
+    padding: 20px;
+    max-height: 160pxpx;
+    flex-shrink: 0;
+    box-sizing: border-box;
 }
 
-section center button{
-    width: 150px;
-    height: 35px;
-    margin-bottom: 30px;
+.inside-boxSearch{
+    margin: 0 auto;
+    padding-top: 6px;
+    width: auto;
+    max-width: 584px;
+    position: relative;
 }
-p{
+
+.google-search{
+    display: flex;
+    min-height: 44px;
+    background: #ffffff;
+    position: relative;
+    height:44px;
+    min-width: 377px;
+}
+
+.google-search i{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    left: 15px;
+    position: absolute;
+    top: 0;
+}
+
+.google-search input{
+    background-color: #ffffff;
+    border: none;
+    border-radius:20px;
     width: 100%;
-    margin-bottom: 150px;
+    height: 100%;
+    box-shadow: 0 1px 6px 0 #20212447;
+    padding-inline-start: 52px;
+    padding-inline-end: 87px;
+    position: relative;
 }
-ul li{
-    display: inline-block;
+
+.icon-button{
+    color: transparent;
+    position: absolute;
+    height: 100%;
+    width: 26px;
+    cursor: pointer;
+    border: none;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 21px 21px;
+    border-radius: 2px;
 }
-ul.izq{
+
+#voiceSearchButton{
+    background-image:url(https://cdn-icons-png.flaticon.com/512/3128/3128290.png);
+    right: 52px;
+}
+
+#lensSearchButton{
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/d/d6/Google_Lens_Icon.svg); 
+    right: 16px;
+}
+
+.searchInput{
     display: flex;
-    float: left;
-    width: 500px;
-    justify-content: space-around;
-    margin-left: 0px;
+    justify-content: center;
+    height: 70px;;
+    padding-top: 18px;
 }
-ul.der{
-    display: flex;
-    float: right;
-    width: 250px;
-    justify-content: space-around;
-    margin-left: 0px;
+
+.searchInput input{
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    color: #3c4043;
+    font-family: arial,sans-serif;
+    font-size: 14px;
+    margin: 11px 4px;
+    padding: 0 16px;
+    line-height: 27px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
 }
-ul.mx{
+
+.free-space{
+    flex-grow: 1;
+    flex-shrink: 0;
+}
+
+.language{
+    display: block;
+    font-size: small;
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+.language a{
+    color: #1a0dab;
+}
+
+.language a :hover{
+    text-decoration: underline;
+}
+
+footer{
+    display: block;
+    background: #f2f2f2;
+    flex-shrink: 0;
+    box-sizing: border-box;
+}
+
+.country{
     display: flex;
-    margin-left: 15px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 15px 30px;
+    border-bottom: 1px solid #dadce0;
+    font-size: 15px;
+    color: #70757a;
+}
+
+.informationServices{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.support{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.sprt{
+    color: #70757a;
+    display: block;
+    padding: 15px;
+    white-space:nowrap;
+    text-decoration: none;
+}
+
+.references{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.refs{
+    color: #70757a;
+    display: block;
+    padding: 15px;
+    white-space:nowrap;
+    text-decoration: none;
 }
